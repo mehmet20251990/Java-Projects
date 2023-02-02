@@ -2,9 +2,7 @@ package Projects.ClaruswayStore;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class Brand {
-
     private int id;
     private String name;
     private static List<Brand> brandList = new ArrayList<>();
@@ -12,28 +10,22 @@ public class Brand {
     static {
         createBrands();
     }
-
     public Brand(int brandId, String brandName) {
         this.id = brandId;
         this.name = brandName;
     }
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public static void createBrands(){
         //Oluşturmul olduğum List e ekleme yapıldı.
         //Brand objesi olmalıydı. -> new Brand(1,"CW");
@@ -47,17 +39,14 @@ public class Brand {
         brandList.add(new Brand(8,"Monster"));
         brandList.add(new Brand(9,"Casper"));
     }
-
     public static void printBrands(){
         System.out.println("... Marka Listesi ...");
         //En temelde yapmak istediğim şey --> System.out.println("BrandName");
-
         for (Brand brand : brandList) {
             System.out.println(brand.getId() + " " + brand.getName());
         }
         System.out.println("----------------------------------");
     }
-
     public static Brand getBrand(int id){
         for (Brand b : brandList) {
             if (id == b.getId()){
