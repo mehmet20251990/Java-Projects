@@ -3,12 +3,10 @@ package Projects.ClaruswayStore;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class NoteBook extends Product{
     Scanner scanner = new Scanner(System.in);
     static int nId = 1;
     static List<NoteBook> noteBooks = new ArrayList<>();
-
     public NoteBook(String name, double price, double discountRate,
                     int amount, Brand brand, double screenSize, int ram, int memory) {
         super(nId, name, price, discountRate, amount, brand, screenSize, ram, memory);
@@ -18,7 +16,6 @@ public class NoteBook extends Product{
     }
     @Override
     public void menu() {
-
         System.out.println("1) Yeni Notebook Ekleme \n" +
                 "2) Notebook Listesini Görüntüleme \n" +
                 "3) Notebook Silme ");

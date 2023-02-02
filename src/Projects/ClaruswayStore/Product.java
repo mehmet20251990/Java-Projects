@@ -23,19 +23,15 @@ memory = Ürün hafızası
     private int ram;
     private int memory;
         /*
-        void menu()
-
+    void menu()
     void addItem()
-
     void getProducts()
-
     void deleteItem()
          */
     public abstract void menu();
     public abstract void addItem();
     public abstract void getProducts();
     public abstract void deleteItem();
-
     public Product(int id, String name, double price, double discountRate, int amount,
                    Brand brand, double screenSize, int ram, int memory) {
         this.id = id;
@@ -48,7 +44,6 @@ memory = Ürün hafızası
         this.ram = ram;
         this.memory = memory;
     }
-
     public Product() {
     }
     public int getId() {

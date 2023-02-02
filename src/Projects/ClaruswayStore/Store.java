@@ -1,10 +1,8 @@
 package Projects.ClaruswayStore;
 
 import java.util.Scanner;
-
 public class Store {
     Scanner scanner = new Scanner(System.in);
-
     public void run(){
         System.out.println("CW Store Management Paneline Hoşgeldiniz...");
         System.out.println("1) Notebook İşlemleri \n" +
