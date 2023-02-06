@@ -2,13 +2,10 @@ package Projects.GirisProject;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class GirisPaneli {
-
    // public static void giris(){// bu tanımlama ile method static oldg için className ile call edilir
     public  void giris(){// bu tanımlama ile method non static oldg için obj ile call edilir
         Scanner sc = new Scanner(System.in);
-
         Kayıt yeniKayıt = new Kayıt();//Kayıt Calss'a erişim için p'siz cons. ile  yeniKayıt obj uretildi
         //Kayıt Class'dan obj olmadan method call etmek için method'lar static yapılırsa ClassName ile call edilebilir
         ArrayList<Kullanıcı> kisi = new ArrayList<>();//Kulllanıcı Class'dan uretilen obj tutulacagi bos list
